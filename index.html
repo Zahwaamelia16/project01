@@ -1,11 +1,637 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KerjaMatch — Temukan Pekerjaan yang Cocok</title>
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    project landing page
+    <!-- ==========================================
+         NAVBAR
+    =========================================== -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-mark">✓</span>
+                <span>Kerja<span>Match</span></span>
+            </a>
+            <nav class="nav-menu">
+                <a href="#home" class="active">Beranda</a>
+                <a href="#lowongan">Lowongan</a>
+                <a href="#cara-kerja">Cara Kerja</a>
+                <a href="#tentang">Tentang Kami</a>
+            </nav>
+            <a href="#cta" class="btn btn-dark nav-button">
+                Mulai Cari Kerja
+            </a>
+        </div>
+    </header>
+    <main>
+        <!-- ==========================================
+             HERO SECTION
+        =========================================== -->
+        <section class="hero" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="eyebrow">
+                        PLATFORM JOB MATCHING UNTUK FRESH GRADUATE
+                    </span>
+                    <h1>
+                        Temukan Pekerjaan
+                        yang <span>Cocok</span>
+                        dengan Skill Kamu.
+                    </h1>
+                    <p class="hero-description">
+                        Tidak perlu membuka puluhan tab untuk mencari pekerjaan.
+                        KerjaMatch membantu kamu menemukan lowongan yang relevan
+                        berdasarkan skill, pengalaman, dan tujuan karier.
+                    </p>
+                    <!-- Search Box -->
+                    <div class="search-box">
+                        <div class="search-input">
+                            <span class="search-icon">⌕</span>
+                            <div>
+                                <small>Cari pekerjaan</small>
+                                <p>Posisi, skill, atau bidang</p>
+                            </div>
+                        </div>
+                        <a href="#lowongan" class="btn btn-yellow">
+                            Cari Lowongan
+                        </a>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#lowongan" class="btn btn-yellow">
+                            Cari Lowongan
+                        </a>
+                        <a href="#cara-kerja" class="btn btn-outline">
+                            Lihat Cara Kerja
+                            <span>→</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Hero Visual -->
+                <div class="hero-visual">
+                    <div class="floating-card floating-card-top">
+                        <span class="floating-icon">✓</span>
+                        <div>
+                            <strong>92% Match</strong>
+                            <small>Skill sesuai</small>
+                        </div>
+                    </div>
+                    <div class="match-card">
+                        <div class="match-card-header">
+                            <div>
+                                <span class="card-label">RECOMMENDED FOR YOU</span>
+                                <h3>Business Analyst</h3>
+                                <p>PT Teknologi Nusantara</p>
+                            </div>
+                            <div class="company-icon">
+                                TN
+                            </div>
+                        </div>
+                        <div class="match-score">
+                            <div class="score-info">
+                                <span>Skill Match</span>
+                                <strong>92%</strong>
+                            </div>
+                            <div class="score-bar">
+                                <span></span>
+                            </div>
+                            <small>Sangat sesuai dengan profil kamu</small>
+                        </div>
+                        <div class="skill-list">
+                            <span>✓ Excel</span>
+                            <span>✓ SQL</span>
+                            <span>✓ Data Analysis</span>
+                            <span>✓ Problem Solving</span>
+                        </div>
+                        <div class="job-meta">
+                            <span>📍 Surabaya</span>
+                            <span>● Full Time</span>
+                        </div>
+                        <a href="#lowongan" class="card-button">
+                            Lihat Lowongan
+                            <span>→</span>
+                        </a>
+                    </div>
+                    <div class="floating-card floating-card-bottom">
+                        <div class="mini-circle">+</div>
+                        <div>
+                            <strong>3 Lowongan</strong>
+                            <small>Direkomendasikan</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             QUICK VALUE
+        =========================================== -->
+        <section class="quick-value">
+            <div class="container quick-value-container">
+                <div class="quick-item">
+                    <strong>Skill-Based</strong>
+                    <span>Pencarian berdasarkan skill</span>
+                </div>
+                <div class="quick-divider"></div>
+                <div class="quick-item">
+                    <strong>Relevant</strong>
+                    <span>Lowongan lebih sesuai</span>
+                </div>
+                <div class="quick-divider"></div>
+                <div class="quick-item">
+                    <strong>Efficient</strong>
+                    <span>Hemat waktu mencari</span>
+                </div>
+                <div class="quick-divider"></div>
+                <div class="quick-item">
+                    <strong>Match Score</strong>
+                    <span>Tahu tingkat kecocokan</span>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             PROBLEM SECTION
+        =========================================== -->
+        <section class="problem-section" id="tentang">
+            <div class="container">
+                <div class="section-heading light-heading">
+                    <span class="eyebrow">
+                        THE PROBLEM
+                    </span>
+                    <h2>
+                        Cari Kerja Seharusnya
+                        <span>Tidak Serumit Ini.</span>
+                    </h2>
+                    <p>
+                        Fresh graduate sering menghabiskan waktu untuk mencari,
+                        membuka, dan membandingkan banyak lowongan sebelum
+                        menemukan pekerjaan yang benar-benar sesuai.
+                    </p>
+                </div>
+                <div class="problem-grid">
+                    <article class="problem-card">
+                        <div class="problem-number">01</div>
+                        <div class="problem-icon">⌕</div>
+                        <h3>Terlalu Banyak Pilihan</h3>
+                        <p>
+                            Banyaknya lowongan membuat user sulit menentukan
+                            mana yang benar-benar sesuai dengan kemampuan.
+                        </p>
+                    </article>
+                    <article class="problem-card">
+                        <div class="problem-number">02</div>
+                        <div class="problem-icon">≡</div>
+                        <h3>Requirement Kurang Jelas</h3>
+                        <p>
+                            Judul posisi tidak selalu menggambarkan skill dan
+                            kualifikasi yang sebenarnya dibutuhkan.
+                        </p>
+                    </article>
+                    <article class="problem-card">
+                        <div class="problem-number">03</div>
+                        <div class="problem-icon">◷</div>
+                        <h3>Banyak Waktu Terbuang</h3>
+                        <p>
+                            User menghabiskan lebih banyak waktu untuk mencari
+                            dibandingkan mempersiapkan lamaran.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             FEATURES / SOLUTION
+        =========================================== -->
+        <section class="features-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="eyebrow">
+                        OUR SOLUTION
+                    </span>
+                    <h2>
+                        KerjaMatch Membuat
+                        <span>Pencarian Lebih Relevan.</span>
+                    </h2>
+                    <p>
+                        Temukan lowongan berdasarkan apa yang kamu bisa,
+                        bukan hanya berdasarkan kata kunci posisi.
+                    </p>
+                </div>
+                <div class="features-grid">
+                    <!-- Feature 01 -->
+                    <article class="feature-card feature-yellow">
+                        <div class="feature-top">
+                            <span class="feature-number">01</span>
+                            <span class="feature-arrow">↗</span>
+                        </div>
+                        <div class="feature-icon">✦</div>
+                        <h3>Skill-Based Matching</h3>
+                        <p>
+                            Temukan lowongan berdasarkan skill yang
+                            kamu miliki dan pengalaman yang relevan.
+                        </p>
+                    </article>
+                    <!-- Feature 02 -->
+                    <article class="feature-card feature-dark">
+                        <div class="feature-top">
+                            <span class="feature-number">02</span>
+                            <span class="feature-arrow">↗</span>
+                        </div>
+                        <div class="feature-icon">%</div>
+                        <h3>Match Score</h3>
+                        <p>
+                            Lihat persentase kecocokan profilmu
+                            dengan requirement suatu pekerjaan.
+                        </p>
+                    </article>
+                    <!-- Feature 03 -->
+                    <article class="feature-card">
+                        <div class="feature-top">
+                            <span class="feature-number">03</span>
+                            <span class="feature-arrow">↗</span>
+                        </div>
+                        <div class="feature-icon">☷</div>
+                        <h3>Requirement Breakdown</h3>
+                        <p>
+                            Pahami skill dan kualifikasi yang
+                            dibutuhkan sebelum melamar.
+                        </p>
+                    </article>
+                    <!-- Feature 04 -->
+                    <article class="feature-card">
+                        <div class="feature-top">
+                            <span class="feature-number">04</span>
+                            <span class="feature-arrow">↗</span>
+                        </div>
+                        <div class="feature-icon">♡</div>
+                        <h3>Save & Compare</h3>
+                        <p>
+                            Simpan lowongan menarik dan bandingkan
+                            sebelum menentukan pilihan.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             JOB RECOMMENDATION
+        =========================================== -->
+        <section class="jobs-section" id="lowongan">
+            <div class="container">
+                <div class="section-heading job-heading">
+                    <div>
+                        <span class="eyebrow">
+                            RECOMMENDED JOBS
+                        </span>
+                        <h2>
+                            Lowongan yang
+                            <span>Mungkin Cocok</span>
+                            Untukmu.
+                        </h2>
+                    </div>
+                    <p>
+                        Contoh rekomendasi berdasarkan skill
+                        dan tujuan karier kamu.
+                    </p>
+                </div>
+                <div class="job-grid">
+                    <!-- Job 1 -->
+                    <article class="job-card">
+                        <div class="job-card-top">
+                            <div class="company-logo">
+                                TN
+                            </div>
+                            <button class="save-button">
+                                ♡
+                            </button>
+                        </div>
+                        <span class="job-type">
+                            FULL TIME
+                        </span>
+                        <h3>Business Analyst</h3>
+                        <p class="company-name">
+                            PT Teknologi Nusantara
+                        </p>
+                        <div class="job-location">
+                            <span>📍 Surabaya</span>
+                            <span>Entry Level</span>
+                        </div>
+                        <div class="job-skills">
+                            <span>Excel</span>
+                            <span>SQL</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="job-card-bottom">
+                            <div class="match">
+                                <strong>92%</strong>
+                                <span>Match</span>
+                            </div>
+                            <a href="#" class="job-detail">
+                                Lihat Detail →
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Job 2 -->
+                    <article class="job-card">
+                        <div class="job-card-top">
+                            <div class="company-logo">
+                                DI
+                            </div>
+                            <button class="save-button">
+                                ♡
+                            </button>
+                        </div>
+                        <span class="job-type">
+                            FULL TIME
+                        </span>
+                        <h3>Product Analyst</h3>
+                        <p class="company-name">
+                            PT Digital Indonesia
+                        </p>
+                        <div class="job-location">
+                            <span>📍 Jakarta</span>
+                            <span>Entry Level</span>
+                        </div>
+                        <div class="job-skills">
+                            <span>Research</span>
+                            <span>SQL</span>
+                            <span>Analytics</span>
+                        </div>
+                        <div class="job-card-bottom">
+                            <div class="match">
+                                <strong>87%</strong>
+                                <span>Match</span>
+                            </div>
+                            <a href="#" class="job-detail">
+                                Lihat Detail →
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Job 3 -->
+                    <article class="job-card">
+                        <div class="job-card-top">
+                            <div class="company-logo">
+                                DN
+                            </div>
+                            <button class="save-button">
+                                ♡
+                            </button>
+                        </div>
+                        <span class="job-type">
+                            FULL TIME
+                        </span>
+                        <h3>Junior Data Analyst</h3>
+                        <p class="company-name">
+                            PT Data Nusantara
+                        </p>
+                        <div class="job-location">
+                            <span>◉ Remote</span>
+                            <span>Entry Level</span>
+                        </div>
+                        <div class="job-skills">
+                            <span>Excel</span>
+                            <span>Python</span>
+                            <span>Data Analysis</span>
+                        </div>
+                        <div class="job-card-bottom">
+                            <div class="match">
+                                <strong>84%</strong>
+                                <span>Match</span>
+                            </div>
+                            <a href="#" class="job-detail">
+                                Lihat Detail →
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="center-button">
+                    <a href="#" class="btn btn-dark">
+                        Lihat Semua Lowongan
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             MATCH SCORE
+        =========================================== -->
+        <section class="match-section">
+            <div class="container match-container">
+                <!-- Left -->
+                <div class="profile-preview">
+                    <div class="profile-header">
+                        <div class="profile-avatar">
+                            KP
+                        </div>
+                        <div>
+                            <h3>Kevin Pratama</h3>
+                            <p>Fresh Graduate</p>
+                        </div>
+                    </div>
+                    <div class="profile-divider"></div>
+                    <div class="profile-skill-header">
+                        <span>Your Skills</span>
+                        <span>Level</span>
+                    </div>
+                    <div class="profile-skill">
+                        <span>Excel</span>
+                        <div class="skill-progress">
+                            <span style="width: 90%;"></span>
+                        </div>
+                    </div>
+                    <div class="profile-skill">
+                        <span>SQL</span>
+                        <div class="skill-progress">
+                            <span style="width: 80%;"></span>
+                        </div>
+                    </div>
+                    <div class="profile-skill">
+                        <span>Data Analysis</span>
+                        <div class="skill-progress">
+                            <span style="width: 88%;"></span>
+                        </div>
+                    </div>
+                    <div class="profile-skill">
+                        <span>Research</span>
+                        <div class="skill-progress">
+                            <span style="width: 75%;"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right -->
+                <div class="match-content">
+                    <span class="eyebrow">
+                        SMARTER JOB SEARCH
+                    </span>
+                    <h2>
+                        Tahu Seberapa Cocok
+                        Kamu Sebelum <span>Melamar.</span>
+                    </h2>
+                    <p>
+                        Tidak perlu menebak-nebak apakah kamu memenuhi
+                        requirement. KerjaMatch membantu menunjukkan
+                        kecocokan skill kamu dengan kebutuhan posisi.
+                    </p>
+                    <div class="match-result">
+                        <div class="match-result-header">
+                            <div>
+                                <span>BUSINESS ANALYST</span>
+                                <strong>PT Teknologi Nusantara</strong>
+                            </div>
+                            <div class="big-match">
+                                92%
+                            </div>
+                        </div>
+                        <div class="match-result-line">
+                            <span>✓ Excel</span>
+                            <span>✓ SQL</span>
+                            <span>✓ Data Analysis</span>
+                            <span>✓ Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             HOW IT WORKS
+        =========================================== -->
+        <section class="steps-section" id="cara-kerja">
+            <div class="container">
+                <div class="section-heading center-heading">
+                    <span class="eyebrow">
+                        HOW IT WORKS
+                    </span>
+                    <h2>
+                        Temukan Pekerjaan
+                        <span>dalam 3 Langkah.</span>
+                    </h2>
+                    <p>
+                        Proses pencarian kerja yang lebih sederhana,
+                        relevan, dan efisien.
+                    </p>
+                </div>
+                <div class="steps-grid">
+                    <!-- Step 1 -->
+                    <article class="step-card">
+                        <div class="step-number">
+                            01
+                        </div>
+                        <div class="step-icon">
+                            ✦
+                        </div>
+                        <h3>Masukkan Skill</h3>
+                        <p>
+                            Tambahkan skill, pengalaman, dan posisi
+                            yang kamu inginkan.
+                        </p>
+                    </article>
+                    <!-- Step 2 -->
+                    <article class="step-card">
+                        <div class="step-number">
+                            02
+                        </div>
+                        <div class="step-icon">
+                            %
+                        </div>
+                        <h3>Temukan Match</h3>
+                        <p>
+                            Dapatkan rekomendasi lowongan yang
+                            sesuai dengan profilmu.
+                        </p>
+                    </article>
+                    <!-- Step 3 -->
+                    <article class="step-card">
+                        <div class="step-number">
+                            03
+                        </div>
+                        <div class="step-icon">
+                            →
+                        </div>
+                        <h3>Mulai Melamar</h3>
+                        <p>
+                            Pilih pekerjaan terbaik dan lanjutkan
+                            proses lamaran.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- ==========================================
+             CTA
+        =========================================== -->
+        <section class="cta-section" id="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <span class="eyebrow">
+                        YOUR NEXT CAREER STARTS HERE
+                    </span>
+                    <h2>
+                        Siap Menemukan
+                        <span>Pekerjaan yang Cocok?</span>
+                    </h2>
+                    <p>
+                        Jangan habiskan waktu membuka puluhan tab.
+                        Temukan pekerjaan berdasarkan skill dan
+                        tujuan karier kamu.
+                    </p>
+                    <a href="#lowongan" class="btn btn-dark">
+                        Mulai Cari Lowongan
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo footer-logo">
+                    <span class="logo-mark">✓</span>
+                    <span>Kerja<span>Match</span></span>
+                </a>
+                <p>
+                    Temukan pekerjaan yang sesuai dengan
+                    skill dan tujuan kariermu.
+                </p>
+            </div>
+            <div class="footer-column">
+                <h4>Product</h4>
+                <a href="#lowongan">Lowongan</a>
+                <a href="#cara-kerja">Cara Kerja</a>
+                <a href="#home">Match Score</a>
+            </div>
+            <div class="footer-column">
+                <h4>Company</h4>
+                <a href="#tentang">Tentang Kami</a>
+                <a href="#cta">Kontak</a>
+                <a href="#home">Karier</a>
+            </div>
+            <div class="footer-column">
+                <h4>Follow Us</h4>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Email</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>
+                © 2026 KerjaMatch. All rights reserved.
+            </p>
+            <p>
+                Built for fresh graduates.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
