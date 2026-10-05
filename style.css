@@ -1,4 +1,4 @@
-/* ==================== RESET ==================== */
+/* ==================== STYLE JOBMATE ==================== */
 
 * {
   margin: 0;
@@ -151,6 +151,15 @@ section {
 .section-label {
   display: inline-block;
   color: #d5a900;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-labelblack {
+  display: inline-block;
+  color: #000000;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 2px;
@@ -918,6 +927,12 @@ section {
 
 .footer-logo {
   margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 45px;
+  height: auto;
+  display: block;
 }
 
 .footer-brand p {
