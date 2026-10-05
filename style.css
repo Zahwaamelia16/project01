@@ -80,15 +80,10 @@ input {
   color: var(--yellow);
 }
 
-.logo-icon {
-    width: 48px;
-    height: 48px;
-    background-color: #FFD43B;
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.logo img {
+    width: 45px;
+    height: auto;
+    display: block;
 }
 
 .logo-icon .material-symbols-outlined {
